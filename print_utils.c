@@ -50,16 +50,16 @@ void	print_welcome_2(int pid, char *color)
 		temp /= 10;
 		count++;
 	}
-	n = 10 - count;
+	n = 11 - count;
 	write_num_color(pid, "\033[1;92m");
 	while (--n)
 		write(1, " ", 1);
-	ft_putstr_color("╔══════╗ BROUGHT TO YOU BY: ", color);
+	ft_putstr_color("╔══════╗  BROUGHT TO YOU BY: ", color);
 	ft_putstr_color("JHOTCHKI", "\033[1;92m");
 	ft_putstr_color("✯✯✯✯✯✯░░║\n", color);
 	ft_putstr_color(" ╚═══════════════════════════════╣  📡 "
 		" ╠═════════════════════════════════════╝\n", color);
-	ft_putstr_color("             ✯ ✯ ✯", "\033[1;93m");
+	ft_putstr_color("            ✯ ✯ ✯ ", "\033[1;93m");
 	ft_putstr_color("═══════════════╝      ╚═════════════════", color);
 	ft_putstr_color(" ✯ ✯ ✯                  \n", "\033[1;93m");
 }
